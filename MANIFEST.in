@@ -1,0 +1,20 @@
+# Include the README file
+include README.md
+
+# Include the LICENSE file
+include LICENSE
+
+# Include the manifest file itself
+include MANIFEST.in
+
+# Include all Python files in the utils/ directory
+recursive-include utils *.py
+
+# Include any other non-Python files in the utils/ directory, if needed
+recursive-include utils *.txt *.md
+
+# Include all files in the pymydoc/ directory
+recursive-include pymydoc *
+
+# Exclude specific unwanted files (e.g., temporary files)
+global-exclude *.py[cod] __pycache__ *.so *.dylib .DS_Store
