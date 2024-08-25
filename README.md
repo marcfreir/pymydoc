@@ -20,6 +20,8 @@ or
 pip3 install pymydoc
 ```
 
+## Step 2: Use pymydoc in your script
+
 To generate documentation from your Python script, you just need to include the following in your script:
 
 Example: `project_example.py`
@@ -36,8 +38,11 @@ pymydoc.pymydoc(__file__)
 
 ```
 
+## Step 3: Run your script
+
 When you run `project_example.py`, the documentation will be automatically generated and saved as `documentation.md`.
 
+## Final words
 With this setup, you can easily generate documentation by calling `auto_doc.auto_doc(...)` within your script. The library handles everything behind the scenes, creating a `documentation.md` file based on your code.
 
 Ask me anything: marcfreir@outlook.com
