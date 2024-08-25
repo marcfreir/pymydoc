@@ -1,11 +1,22 @@
-def greet(name):
+class Greeter:
     """
-    Greets the person with their name.
-    
-    Args:
-        name (str): The name of the person.
-    
-    Returns:
-        str: A greeting message.
+    A class to represent a greeter.
     """
-    return f"Hello, {name}!"
+
+    def __init__(self, name):
+        """
+        Initialize the greeter with a name.
+        
+        Args:
+            name (str): The name of the person.
+        """
+        self.name = name
+
+    def greet(self):
+        """
+        Returns a greeting message.
+        
+        Returns:
+            str: A greeting message.
+        """
+        return f"Hello, {self.name}!"
